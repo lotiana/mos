@@ -6,6 +6,8 @@
 :root{
     --fzh:1.6em;
     --dcb: #200466;
+    --swi: 198px;
+    --shi: 210px;
 }
 
 body{
@@ -129,6 +131,27 @@ background-image: url('img/instagram.png');
 .info_panel__p:last-child{
     margin-bottom:50px;
 }
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+.up_row{
+   display: flex; 
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card__icon{
+    width: var(--swi);
+    height: var(--shi);
+}
+.card__icon__moscow{
+    background-image: url('img/');
+}
+
+
+
 .footer{
     background-color: var(--dcb);
     color: white;
