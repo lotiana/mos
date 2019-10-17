@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 :root{
     --fzh:1.6em;
-    --dcb: #200466;
+    --dcb: #223541;
     --swi: 198px;
     --shi: 210px;
+    --dco: #D7593B
 }
 
 body{
@@ -20,6 +22,27 @@ body{
     display: flex;
     align-items: center;
 }
+
+.aside{
+    position:fixed;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dco);
+    padding: 5px;
+    margin-left: 5px;
+    
+}
+.aside__a{
+    text-decoration: none;
+    display: inline-block;
+    width: 75px;
+    height: 30px;
+    color:white;
+    text-align: center;
+}
+
+
 .header #logo{
     width: 75px;
     height:75px;
@@ -28,6 +51,12 @@ body{
     background-position: center center;
     margin-left: 30px;
     margin-right: 60px;
+
+}
+.header #logo:hover{
+    animation-name: logo;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
 }
 .header__nav{
     display: flex;
@@ -73,7 +102,7 @@ body{
      transition: all 0.5s;
     }
 .main__btn_attract:hover{
-    border-left: 7px solid yellow;    
+    border-left: 7px solid var(--dco);    
 }
 .soc_wrap{
     display: flex;
@@ -128,6 +157,22 @@ background-image: url('img/instagram.png');
  .first{
     margin-top:50px !important;
 }
+
+.info_panel__ul{
+    text-align: center;
+    
+}
+.info_panel__ul li{
+    list-style-type:none;
+    font-size: 20px;
+    line-height: 2;
+}
+ul:after{
+    content:url('http://s1.iconbird.com/ico/0512/summerholidayicons1/file1336928588.png');
+    size: 50%;
+}
+
+
 .info_panel__p:last-child{
     margin-bottom:50px;
 }
@@ -135,21 +180,63 @@ background-image: url('img/instagram.png');
     display: flex;
     flex-direction: column;
 }
-.up_row{
+.card_row{
    display: flex; 
 }
 .card{
     display: flex;
     flex-direction: column;
+    padding: 18px 50px 50px 50px;
+    text-align: center;
+    border: 2px solid black;
+    width: 400px;
+    align-items: center;
 }
+
 .card__icon{
     width: var(--swi);
     height: var(--shi);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-.card__icon__moscow{
-    background-image: url('img/');
+.card__h5{
+    color: var(--dcb);
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.card__p{
+    font-size: 17px;
+    font-family: Helvetica, sans-serif;
+
+}
+.card__line{
+    height: 5px;
+    width: 80px;
+    background-color: var(--dco);
+    margin-bottom: 20px;
 }
 
+.card__icon__moscow{
+    background-image: url('img/moscow.png');
+}
+.card__icon__london{
+    background-image: url('img/big-ben.png');
+    
+}
+.card__icon__africa{
+    background-image: url('img/pyramids.png'); 
+}
+.card__icon__na{
+    background-image: url('img/north-america.png'); 
+}
+.card__icon__sa{
+    background-image: url('img/south-america.png'); 
+}
+.card__icon__australia{
+    background-image: url('img/kangaroo.png');
+}
 
 
 .footer{
@@ -170,7 +257,7 @@ background-image: url('img/instagram.png');
     font-size: 1.8em;
 }
 .footer_info__yellow{
-    color: yellow;
+    color: var(--dco);
 }
 .footer__logo{
     width: 210px;
@@ -183,4 +270,21 @@ background-image: url('img/instagram.png');
 }
 .footer__info__p__right{
     text-align: right;
+}
+
+/* анимации */
+@keyframes logo
+{
+    0%{
+        width: 75px;
+        height:75px; 
+    }
+    50%{        
+        width: 80px;
+        height:80px; 
+    }
+    100%{        
+        width: 75px;
+        height:75px; 
+    }
 }

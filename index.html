@@ -13,25 +13,29 @@
 <header class="header">
     <div id="logo"></div>
     <nav class="header__nav">
-        <a href="#">главная</a>
-        <a href="#"> о нас</a>
-        <a href="#"> контакты</a>
+        <a href="#main">главная</a>
+        <a href="#info"> о нас</a>
+        <a href="#cont"> контакты</a>
     </nav>
 </header>
-<main class="main">
+<aside class="aside">
+    <a href="#main" class="aside__a">главная</a>
+    <a href="#info" class="aside__a"> о нас</a>
+    <a href="#cont" class="aside__a"> контакты</a>
+</aside>
+<main class="main" id="main">
     <h3 class="main__h3">Только красивые путешествия</h3>
     
     <div class="main__btn_attract">
         присоединяйся
     </div>
-
     <div class="soc_wrap soc_wrap__right">
     <a href="https://vk.com "><div class="soc_wrap__icon soc_wrap__vk soc_wrap__icon__big" ></div></a>
     <a href="https://facebook.com"> <div class="soc_wrap__icon soc_wrap__face soc_wrap__icon__big"></div></a> 
     <a href="https://instagram.com"> <div class="soc_wrap__icon soc_wrap__inst soc_wrap__icon__big"></div></a>
     </div>
 </main>
-    <div class="info_panel">
+    <div class="info_panel" id="info">
         <h3 class="info_panel__h3">Путешествуй красиво! Блог в фотографиях!</h3>
         <p class="info_panel__p first"> 
             Представьте себе все лучшее, что есть в России: широкие просторы, разнообразная природа, щедрая душа, девушки особой красоты, баня в конце концов. Добавьте к этому все то, чем так привлекательна Москва: гастрономические рестораны, безудержные вечеринки, звезды ТВ и инстаграмма вокруг. Взболтайте, но не смешивайте и получите Розу Хутор 2017 – правильный баланс здорового лайфстайла и роскоши.
@@ -45,9 +49,16 @@
         <p class="info_panel__p">
             В общем, какое бы время вы ни выбрали, Роза Хутор удивит и подарит желание говорить о России с восторгом!
         </p>
+    <div class="info_panel__h3">Причины воспользоваться нашими турами:</div>
+        <ul class="info_panel__ul">
+            <li> Классные лежаки </li>
+            <li> Вежливые гиды </li>
+            <li> Вкусные кокосы на берегу </li>
+            <li> Общая позитивная атмосфера </li>
+        </ul>
     </div>
 <div class="cards">
-    <div class="up_row">
+    <div class="card_row">
         <div class="card">
             <div class="card__icon card__icon__moscow"></div>
             <h5 class="card__h5">Путешествия по России</h5>
@@ -69,12 +80,35 @@
             </p>
         </div>
     </div>
+    <div class="card_row">
+        <div class="card">
+            <div class="card__icon card__icon__na"></div>
+            <h5 class="card__h5">Путешествия по Северной Америке</h5>
+            <div class="card__line"></div>
+            <p class="card__p">Конечно мы проедем через всю Амрику и побываем в тех местах, где еще никого не было!</p>
+        </div>
+        <div class="card">
+            <div class="card__icon card__icon__sa"></div>
+            <h5 class="card__h5">Путешествия по Южной Америке</h5>
+            <div class="card__line"></div>
+            <p class="card__p">Южная Америка - там классно! Рикардо Милос, танцы, аллигаторы -
+                все к вашим услугам
+        </div>
+        <div class="card">
+            <div class="card__icon card__icon__australia"></div>
+            <h5 class="card__h5">Путешествия по Австралии</h5>
+            <div class="card__line"></div>
+            <p class="card__p"> Мы побываем на отдельном континенте! Там тоже есть аллигаторы 
+                летающие пауки! Все как вы любите
+            </p>
+        </div>
+    </div>
 </div>
 
 
 
 
-    <footer class="footer">
+    <footer class="footer" id="cont">
         <div class="footer_info">
             <p class="footer_info__p footer_info__big footer_info__yellow">Мы рядом с вами  </p>
             <p class="footer_info__p footer_info__yellow"> Москва, ул. Комсомола, 12 </p>
