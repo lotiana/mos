@@ -281,12 +281,17 @@
     background-repeat: no-repeat;  
 }
 .ryd__lin{
-    margin: 0 auto;
-    padding: 10px;
+    margin: 10px auto 0 auto;
+    margin-bottom: 10px;
     width: 100px;
-    height: 0;
-    border: none;
+    height: 5px;
     border-bottom: 4px solid rgb(221, 30, 30);
+    transition: width 0.8s;
+    cursor: pointer;
+}
+.card__line__helper{
+    width: 150px;
+    height: 10px;
 }
 .ryd__text{
     text-transform: uppercase;  
